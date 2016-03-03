@@ -134,4 +134,16 @@ aside{
     border-radius:.8rem;
 }
 
+/*
+  <section id='section_one'>
+            <ul>
+                <caption>
+                    <a href='http://cysfresno.org/employee-portal/'>Employee Portal</a>
+*/
+
+main > #section_one > ul{
+    width:20rem;
+    font-size:1.6rem;
+    
+}
 
