@@ -78,48 +78,55 @@ button{
     width:80%;
     height:33rem;
     background-color:snow;
-    border:solid 0.4rem transparent;
-    border-bottom:solid 0.4rem lightgrey;
+    border:solid 0.4rem snow;
     border-radius:0.8rem;
 }
 
-#slider_img{
+#slider_left{
     float:left;
     width:50%;
     height:30rem;
 }
 
-#slider_info{
+main > #slider_sect > #slider_left > img{
+    width:100%;
+    min-width:2.5rem;
+    height:100%;
+    min-height: 16rem;
+    }
+
+#slider_right{
     float:right;
     width:50%;
     height:30rem;
+    vertical-align:middle;
 }
 
-.pad_down{
-    margin-top:7rem;
+.slider_text{
+    width:100%;
+    min-width:2.5rem;
+    height:100%;
+    min-height:16rem;
 }
 
 h1{
+    text-align:left;
     font-size:22px;
 }
 
 p{
     font-size:1.4rem;
 }
-secction{
-    display:inline-block;
+section{
+    display:block;
     margin:0 auto;
     padding:0;
 }
-aside{
-    width:20rem;
-    height:25rem;
-    background-color:blue;
-}
+
 #section_one
     width:80%;
     height:25rem;
-    border: solid lightgrey;
+    border: solid 1rem lightgrey;
     border-radius:.8rem;
     background-color:red;
     box-sizing: border-box;
@@ -134,12 +141,6 @@ aside{
     border-radius:.8rem;
 }
 
-/*
-  <section id='section_one'>
-            <ul>
-                <caption>
-                    <a href='http://cysfresno.org/employee-portal/'>Employee Portal</a>
-*/
 
 main > #section_one > ul{
     width:20rem;
@@ -147,3 +148,74 @@ main > #section_one > ul{
     
 }
 
+@media only screen and (max-width:720px){
+    
+    header >
+    transform:scale(0.75);
+    }
+    
+li{
+    display:inline-block;
+}
+    
+    button{
+    font-size:0.9rem;
+    font-style:oblique;
+    font-weight:700;
+    color:snow;
+    background-color:transparent;
+    width:8rem;
+    height:2.5rem;
+    border-radius:0.3rem;
+    }
+    
+    #slider_img{
+    float:left;
+    width:50%;
+    height:20rem;
+    }
+    
+    h1{
+    font-size:1.85rem;
+    }
+
+    p{
+    font-size:1.2rem;
+    }
+    
+    
+}
+
+@media only screen and (max-width:560px){
+    
+    header > #header_logo > img{
+    transform:scale(0.6);
+    }
+    
+    button{
+    font-size:0.7rem;
+    font-style:oblique;
+    font-weight:700;
+    color:snow;
+    background-color:transparent;
+    width:5rem;
+    height:2.5rem;
+    border-radius:0.3rem;
+    }
+    
+    #slider_img{
+    float:left;
+    width:50%;
+    height:20rem;
+    }
+    
+    h1{
+    font-size:1.55rem;
+    }
+
+    p{
+    font-size:1.0rem;
+    }
+    
+    
+}
